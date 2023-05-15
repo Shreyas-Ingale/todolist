@@ -9,7 +9,7 @@ A Simple Todo list app designed to help you stay organized, productive and in co
 - Task Deletion
 - Task Listing
 - Task Completion
-- User Interface Design
+- Responsive User Interface Design
 - Simple Error Handling
 
 
