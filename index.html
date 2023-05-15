@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <!-- linked stylesheet, favicon, fontawesome icons, js file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/78c7334a1b.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- a theme switch button to toggle between light and dark mode -->
+    <div class="theme-switcher">
+        <button id="theme-btn" title="theme-switcher"><i class="fa-solid fa-moon"></i></button>
+    </div>
+    <!-- main container -->
+    <div class="container">
+        <!-- header section with input field with add icon -->
+        <header>
+            <h1>ToDo List</h1>
+            <div class="input-section">
+                <input type="text" placeholder="Add a new Task ...">
+                <i id="note-icon" class="fa-solid fa-rectangle-list fa-xl"></i>
+                <i id="add-icon" class="fa-solid fa-circle-plus fa-xl"></i>
+            </div>
+        </header>
+        <!-- controls field with filter(all, pending, completed) and a clearAll button to delete all the task -->
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <!-- a ul tag where list items will be added dynamically from local storage -->
+        <ul class="task-list">
+            
+        </ul>
+        <!-- footer with stats like number of pending and completed tasks -->
+        <footer>
+            <span>Tasks Pending : <span class="pending-tasks">0</span></span>
+            <span>Tasks Completed : <span class="completed-tasks">0</span></span>
+        </footer>
+    </div>
+    <!-- section at bottom of the page with credits -->
+    <div class="author-text">
+        <p>
+            Design and Code by <a href="https://github.com/shreyas-ingale" target="_blank">
+                <b>Shreyas Ingale</b>
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
